@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Quiz</title>
+    <meta name='description' content='Quiz about Texas.'>
+    <link href='style.css' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+  </head>
+  
+<body>
+  <main role='main'>
+    <section id='start-page' class='blackbox'>
+      <div id='title'>
+      <h1>The Lone Star State Quiz</h1>
+      <img class='texas' src='images/background/TexasQuiz.png' alt='Texas Flag'>
+      <h3 class='start-text'>How much do you know about good'ole Tejas?<br>Click below to see!</h3>
+      </div>
+      <button class='button'>Yeehaw!</button>
+    </section>
+    
+    <section id='question-page' class='hidden blackbox'>
+      <form  id='texas-form' method='get'>
+      <fieldset name='question-set'>
+        <div id='quiz-question' class='texas-question'></div>
+        <div class='texas-answers' role='radiogroup'></div>
+        <button id='submit-answer' class='button hidden disabled' type='submit' disabled>Yeehaw?</button>
+      </fieldset>
+      </form>
+      <button id='next-question' class='button hidden' type='submit'>Next</button>
+      <div id='feedbackcorrect' class='all-feedback hidden'>
+      <h3>Correct!</h3><br>
+      <img class='happy-cowboy' src='images/correct/happyCowboy.jpg' alt='Happy Cowboy Emoji'></div>
+      <div id='feedbackincorrect' class='hidden'><br></div>
+      <img class='sad-cowboy hidden' src='images/wrong/sadCowboy.png' alt='Sad Cowboy Emoji'>
+      <div class='results-counter'></div>
+      </section>
+    
+    <section id='last-page' class='hidden blackbox'>
+      <h1>Do you know enough about Texas?</h1>
+      <div id='final-correct'><br></div>
+      <div>
+      <img class='spongebob' src='images/correct/spongeTexas.jpg' alt='Spongebob in the shape of Texas'/><br>
+      <p class='craving'>Want to try again? Click below.</p></div>
+      <button id='retake' type='submit'>Yeehaw!</button>
+    </section>
+    
+  </main>  
+    <script src='//code.jquery.com/jquery.min.js'></script>
+    <script src='index.js'></script>
+  </body>
+</html>
